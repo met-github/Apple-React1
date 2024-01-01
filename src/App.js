@@ -1,25 +1,36 @@
+import { Component } from 'react'
+import './commonResource/css/styles.css';
+import './commonResource/css/bootstrap.css';
+import Header from './commonResource/Components/Header/Header';
+import Alert from './commonResource/Components/Alertsection/Alert';
+import FirstSection from './commonResource/Components/FirstSection/FirstSection';
+import SecondSection from './commonResource/Components/SecondSection/SecondSection';
+import ThirdSection from './commonResource/Components/ThirdSection/ThirdSection';
+import FourthSection from './commonResource/Components/FourthSection/FourthSection';
+import FifthSection from './commonResource/Components/FitfthSection/FifthSection';
+import SixthSection from './commonResource/Components/SixthSection/SixthSection';
+import FooterSection from './commonResource/Components/FooterSection/FooterSection';
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+class App extends Component{
+render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Alert />
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
+      <FourthSection />
+      <FifthSection />
+      <SixthSection />
+      <FooterSection/>
     </div>
   );
 }
+    
+}
 
 export default App;
+
+
